@@ -1,10 +1,19 @@
 import React from 'react';
 import { IMAGES } from '../constants';
+import TreeLogo from './TreeLogo';
 
 const About: React.FC = () => {
   return (
-    <section id="sobre" className="py-24 bg-white transition-colors">
-      <div className="max-w-7xl mx-auto px-6">
+    <section
+      id="sobre"
+      className="relative overflow-hidden py-24 bg-[radial-gradient(120%_120%_at_0%_0%,#FFF4EA_0%,#FFFFFF_55%,#F4E8DC_100%)] transition-colors"
+    >
+      <div className="pointer-events-none absolute inset-0 opacity-[0.06]" aria-hidden="true">
+        <div className="absolute -right-16 -top-20 w-[420px] h-[420px]">
+          <TreeLogo className="w-full h-full" />
+        </div>
+      </div>
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-12 gap-16 items-center">
           <div className="md:col-span-5">
             <div className="bg-linen p-4 rounded-2xl relative shadow-sm">

@@ -1,11 +1,20 @@
 import React from 'react';
 import { Phone, MapPin, BadgeCheck, CalendarDays } from 'lucide-react';
 import { WHATSAPP_LINK, DISPLAY_PHONE, PHONE_NUMBER } from '../constants';
+import TreeLogo from './TreeLogo';
 
 const Contact: React.FC = () => {
   return (
-    <section id="contato" className="py-24 bg-secondary/20 transition-colors">
-      <div className="max-w-5xl mx-auto px-6 bg-white rounded-3xl shadow-xl overflow-hidden grid md:grid-cols-2 border border-primary/5">
+    <section
+      id="contato"
+      className="relative overflow-hidden py-24 bg-[radial-gradient(120%_120%_at_0%_100%,#FDEFE3_0%,#F7F3EB_45%,#EFDCCB_100%)] transition-colors"
+    >
+      <div className="pointer-events-none absolute inset-0 opacity-[0.06]" aria-hidden="true">
+        <div className="absolute -left-10 top-0 w-[380px] h-[380px] -translate-y-20">
+          <TreeLogo className="w-full h-full" />
+        </div>
+      </div>
+      <div className="relative z-10 max-w-5xl mx-auto px-6 bg-white/90 rounded-3xl shadow-xl overflow-hidden grid md:grid-cols-2 border border-primary/5 backdrop-blur-sm">
         <div className="p-12 md:p-16">
           <h2 className="font-display text-3xl mb-6 text-text-main">
             Vamos iniciar sua jornada?

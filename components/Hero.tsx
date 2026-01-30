@@ -5,8 +5,16 @@ import TreeLogo from './TreeLogo';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-paper">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center py-12 md:py-0">
+    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-[radial-gradient(120%_120%_at_8%_8%,#FDE8D6_0%,#F7F3EB_40%,#F2E4D6_70%,#EAD8C6_100%)]">
+      <div
+        className="pointer-events-none absolute inset-0 opacity-80 z-0"
+        aria-hidden="true"
+        style={{
+          backgroundImage:
+            "radial-gradient(45% 45% at 85% 20%, rgba(217,142,86,0.25) 0%, rgba(217,142,86,0) 70%), radial-gradient(50% 50% at 15% 65%, rgba(234,228,217,0.9) 0%, rgba(234,228,217,0) 70%), linear-gradient(120deg, rgba(247,243,235,0.6) 0%, rgba(239,226,211,0.9) 45%, rgba(247,243,235,0.5) 100%)",
+        }}
+      />
+      <div className="relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center py-12 md:py-0">
         <div className="order-2 md:order-1">
           <h1 className="font-display text-5xl md:text-7xl mb-8 leading-tight text-text-main">
             Encontre clareza, viva sua{' '}

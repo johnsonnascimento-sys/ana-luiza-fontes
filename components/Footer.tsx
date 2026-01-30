@@ -4,8 +4,13 @@ import TreeLogo from './TreeLogo';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="py-16 bg-background-light border-t border-primary/10 transition-colors bg-paper">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-10">
+    <footer className="relative overflow-hidden py-16 bg-[radial-gradient(120%_120%_at_30%_0%,#FFF3E8_0%,#F7F3EB_60%,#F0E3D5_100%)] border-t border-primary/10 transition-colors">
+      <div className="pointer-events-none absolute inset-0 opacity-[0.05]" aria-hidden="true">
+        <div className="absolute right-0 top-0 w-[360px] h-[360px] translate-x-20 -translate-y-16">
+          <TreeLogo className="w-full h-full" />
+        </div>
+      </div>
+      <div className="relative z-10 max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-10">
         <div className="flex items-center gap-4">
           <div className="w-12 h-12">
             <TreeLogo />

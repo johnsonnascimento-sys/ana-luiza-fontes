@@ -13,9 +13,15 @@ const Navbar: React.FC = () => {
           <div className="w-10 h-10">
             <TreeLogo />
           </div>
-          <span className="font-display text-xl md:text-2xl font-bold text-primary tracking-tight">
-            Ana Luiza Fontes
-          </span>
+          <div className="flex flex-col sm:flex-row sm:items-center sm:gap-3">
+            <span className="font-display text-xl md:text-2xl font-bold text-primary tracking-tight">
+              Ana Luiza Fontes
+            </span>
+            <span className="hidden sm:inline text-text-main/30">|</span>
+            <span className="text-[10px] uppercase tracking-[0.2em] text-text-main/55 font-medium">
+              Psicóloga Clínica
+            </span>
+          </div>
         </div>
 
         {/* Desktop Menu */}
